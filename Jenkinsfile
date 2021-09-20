@@ -9,8 +9,7 @@ node{
    stage('Compile-Package-create-war-file'){
       // Get maven home path
       def mvnHome =  tool name: 'maven-3', type: 'maven'   
-      //bat "${mvnHome}/bin/mvn package"
-      bat "C:\Users\hp\Desktop\Jenkins\apache-maven-3.8.2\bin"
+      bat "${mvnHome}/bin/mvn package"
       }
 /*   stage ('Stop Tomcat Server') {
                bat ''' @ECHO OFF
